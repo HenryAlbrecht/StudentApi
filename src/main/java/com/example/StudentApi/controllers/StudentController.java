@@ -97,15 +97,6 @@ public class StudentController {
                             )
                     )
             ),
-            @ApiResponse(responseCode = "400", description = "Operação quando o Dado ID é inválido",
-                    content = @Content(
-                            mediaType = "application/json",
-                            examples = @ExampleObject(
-                                    name = "Exemplo de Resposta de Erro",
-                                    value = "{\"error\": \"ID inválido\"}"
-                            )
-                    )
-            ),
             @ApiResponse(responseCode = "404", description = "Operação quando não é encontrado nenhum estudante com o ID digitado",
                     content = @Content(
                             mediaType = "application/json",
@@ -135,15 +126,6 @@ public class StudentController {
                             )
                     )
             ),
-            @ApiResponse(responseCode = "400", description = "Operação quando o Dado ID é inválido",
-                    content = @Content(
-                            mediaType = "application/json",
-                            examples = @ExampleObject(
-                                    name = "Exemplo de Resposta de Erro",
-                                    value = "{\"error\": \"ID inválido\"}"
-                            )
-                    )
-            ),
             @ApiResponse(responseCode = "404", description = "Operação quando não é encontrado nenhum estudante com o ID digitado",
                     content = @Content(
                             mediaType = "application/json",
@@ -163,15 +145,6 @@ public class StudentController {
     @Operation(summary = "Deletar um estudante", description = "Operação resposável por deletar um estudante pelo seu ID armazenado no DB")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "204", description = "Operação quando o estudante é deletado com sucesso"),
-            @ApiResponse(responseCode = "400", description = "Operação quando o Dado ID é inválido",
-                    content = @Content(
-                            mediaType = "application/json",
-                            examples = @ExampleObject(
-                                    name = "Exemplo de Resposta de Erro",
-                                    value = "{\"error\": \"ID inválido\"}"
-                            )
-                    )
-            ),
             @ApiResponse(responseCode = "404", description = "Operação quando não é encontrado nenhum estudante com o ID digitado",
                     content = @Content(
                             mediaType = "application/json",
